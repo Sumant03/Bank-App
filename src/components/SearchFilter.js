@@ -9,6 +9,17 @@ import {
   Tooltip
 } from "@material-ui/core";
 
+//This functional component is used to implement search functionalty based on the category and query provided by the user.
+
+
+// It takes 
+//1.category 
+//2.query(data) 
+//display bank details in corresponds to the data provided  
+
+
+//There are various cities,categories options provided to the user .
+
 const SearchFilter = (props) => {
   const {
     city,
@@ -17,6 +28,9 @@ const SearchFilter = (props) => {
     selectedCategory,
     selectedSearchQuery
   } = props;
+
+//This is a Debounce function which is being implemented to reduce the query search 
+//It will only process the request  after the interval of time specified 
 
   const debouncedFunc = (func, time) => {   // debounce function for search query // 
     let timer;
@@ -32,6 +46,7 @@ const SearchFilter = (props) => {
     selectedSearchQuery(value)
   }
 
+  //Debounce function is being called from here .
   const betterFunc = useCallback(debouncedFunc(_setData, 2000), []);  // added useCallback to memoize function //
 
   const _onChangeCity = (e) => {

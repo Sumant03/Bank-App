@@ -16,6 +16,9 @@ import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
  
 
+//All bankLists are being displayed using this functional component . It renders all details of banks in different rows . 
+//If the data is not present it will redirect that bank details not found 
+//Material UI TableContainer is being used to display bank details in table format 
 
 const BanksList = (props) =>  {
   let navigate = useNavigate();
@@ -56,8 +59,6 @@ const BanksList = (props) =>  {
                       _onBankClick(bank)
                     }
                   }}
-                  // onMouseEnter={handleMouseEnter}
-                  // onMouseLeave={handleMouseLeave}
                   >
                 
                   <TableCell align="center" width="150" className="column">

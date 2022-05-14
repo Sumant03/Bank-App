@@ -1,6 +1,8 @@
 import React , {useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 
+//Whenever data is not present or there is any falsy request by the user . This component will be 
+//displayed and user will be redirected to the page with all bank details .
 
 const NotFound = () => {
   let navigate = useNavigate();

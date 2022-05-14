@@ -15,7 +15,12 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
  
+//This component is build to display all the bank details user has liked .
 
+
+//It check if the heart icon is active or not ,
+// if it is active it will display all the favourite banks 
+//else it will display no data found  
 
 const Favourite= (props) =>  {
   let navigate = useNavigate();

@@ -7,9 +7,26 @@ import Pagination from '../components/Pagination';
 import Favourite from '../components/Favourite';
 import '../App.css';
 
+//This is the Main Function component of app which gathers all the child component.
+
+
+//Child Components:-
+
+
+//1. Navbar :- it has various search filters for city , category and a input field for writing query by the user 
+
+//2. BankLists :- it displays all the bank details fetched by the provided API .
+
+//3. Pagination :- it help to implement the feature of pagination , to display only specified 
+//number of banks per page 
+
+//4. Dynamic Pagination :- this component takes input value from user and displays only that 
+//number of banks per page 
+
+
 const AllBanks = () => {
     const [loading, setLoading] = useState(true);
-    const [city, setCity] = useState("MUMBAI");    // default city
+    const [city, setCity] = useState("MUMBAI");    // default city as MUMBAI 
     const [category, setCategory] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
     const [val,setVal]=useState(10);

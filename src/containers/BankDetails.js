@@ -3,6 +3,10 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { ArrowBack } from "@material-ui/icons";
 
 
+//This functional component is used to display bank deatils of a particular selected bank .
+// Whenever the user clicks the bank , it will display all the details of bank .
+
+
 const BankDetails = () => {
   const [details, setDetails] = useState({})
   const location = useLocation();
